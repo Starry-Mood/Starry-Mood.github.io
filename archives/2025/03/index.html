@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | yaaaaaan的博客</title>
+    <title>Archives | yaaaaaan的小窝</title>
     <meta name="author" content="John Doe" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -59,39 +59,34 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>YAAAAAAN的博客</span>
+            <span>YAAAAAAN的小窝</span>
         </a>
         
         <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
+            <i class="fa-solid fa-主页 fa-fw"></i>
             <span>&ensp;Home</span>
         </a>
         
-        <a href="/2025/03/09/about">
-            <i class="fa-solid fa-id-card fa-fw"></i>
+        <a href="/about">
+            <i class="fa-solid fa-关于 fa-fw"></i>
             <span>&ensp;About</span>
         </a>
         
         <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <i class="fa-solid fa-归档 fa-fw"></i>
             <span>&ensp;Archives</span>
         </a>
         
         <a href="/categories">
-            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <i class="fa-solid fa-友链 fa-fw"></i>
             <span>&ensp;Categories</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
         </a>
         
     </nav>
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;YAAAAAAN的博客</span>
+            <span>&emsp;YAAAAAAN的小窝</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -99,16 +94,16 @@
                 <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-house fa-fw"></i>
+                            <i class="fa-solid fa-主页 fa-fw"></i>
                         </div>
                         <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
                     </div>
                 </a>
                 
-                <a href="/2025/03/09/about">
+                <a href="/about">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-id-card fa-fw"></i>
+                            <i class="fa-solid fa-关于 fa-fw"></i>
                         </div>
                         <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
                     </div>
@@ -117,7 +112,7 @@
                 <a href="/archives">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                            <i class="fa-solid fa-归档 fa-fw"></i>
                         </div>
                         <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
                     </div>
@@ -126,18 +121,9 @@
                 <a href="/categories">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                            <i class="fa-solid fa-友链 fa-fw"></i>
                         </div>
                         <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
-                    </div>
-                </a>
-                
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
                     </div>
                 </a>
                 
@@ -159,7 +145,7 @@
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2025/3/9</div>
-                <a href="/2025/03/09/hello-world/">
+                <a href="/hello-world/">
                     <h3>Hello World</h3>
                 </a>
                 <div class="info">
@@ -173,7 +159,7 @@
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2025/3/9</div>
-                <a href="/2025/03/09/about/">
+                <a href="/about/">
                     <h3>about</h3>
                 </a>
                 <div class="info">
@@ -190,7 +176,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 yaaaaaan的博客
+            2022 - 2025 yaaaaaan的小窝
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
