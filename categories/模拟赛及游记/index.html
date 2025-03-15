@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>攀山小队三月月赛 | yaaaaaan的小窝</title>
+    <title>Categories: 模拟赛及游记 | yaaaaaan的小窝</title>
     <meta name="author" content="yaaaaaan" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -42,10 +42,6 @@
 
 
 <script src="/js/lib/preview.js"></script>
-
-
-
-
 
 
 
@@ -149,20 +145,14 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>攀山小队三月月赛</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/3/15
-        </span>
+            <div id="archives">
+    
+    <div class="categories-tags">
         
-        <span class="category">
-            <a href="/categories/%E6%A8%A1%E6%8B%9F%E8%B5%9B%E5%8F%8A%E6%B8%B8%E8%AE%B0/">
+        
+        
+        <span>
+            <a href="/categories/%E6%A8%A1%E6%8B%9F%E8%B5%9B%E5%8F%8A%E6%B8%B8%E8%AE%B0/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
@@ -171,34 +161,32 @@
         </span>
         
         
+        
+        
     </div>
     
-    <div class="content" v-pre>
-        <blockquote>
-<p>“林间鹿鸣，声虽齐而食不均；园中花放，色虽共而赏有别。首鹿未得肥草，旁枝却结硕果。若心系旧巢，何不归去，细听风过故枝之声？”</p>
-</blockquote>
-<h2 id="赛前"><a href="#赛前" class="headerlink" title="赛前"></a>赛前</h2><p>听说有两道图论和两道状压，连夜看了许多之前欠的状压的题目。（结果没什么大用）</p>
-<h2 id="赛时"><a href="#赛时" class="headerlink" title="赛时"></a>赛时</h2><h3 id="08：30-09：20"><a href="#08：30-09：20" class="headerlink" title="08：30~09：20"></a>08：30~09：20</h3><p>总体看了一遍题，结果 $A$ 题我第一眼没看出做法？$B$ 题应该是个 $dp$，$C$ 题数据范围一眼状压，$D$ 题面过于抽象，图论太菜，暂定为不可做题。</p>
-<p>没看到能一眼秒的题，回去看 $A$ 的数据范围，发现只需按对 $3$ 取模的余数进行分类，再预处理暴力即可。</p>
-<h3 id="09：20-10：40"><a href="#09：20-10：40" class="headerlink" title="09：20~10：40"></a>09：20~10：40</h3><p>$A$ 题是签到，$D$ 题是图论，那么 $B,C$ 肯定就是状压了。但 $B$ 题 $k \le n \le 10^4$，明显不能状压(这个蒟蒻没观察出实际上有效的只有 $k \le 5$)。于是果断去开更为明显的 $C$ 题。</p>
-<p>一开始想到三进制状压？$0$ 表示没唱过，$1$ 表示只唱过 $1$ 次，$2$ 表示唱过多次。发现时间和空间都爆炸。二进制也能表示。</p>
-<p>后来设 $dp_{i,j,k}$ 为，目前花费 $i$ 点体力值，轮到第 $j$ 首歌，已唱的歌状态为 $k$。写完过了样例后，因为没有大样例又懒得写对拍，直接切下一道了。</p>
-<h3 id="10：40-11：40"><a href="#10：40-11：40" class="headerlink" title="10：40~11：40"></a>10：40~11：40</h3><p>回去看 $B$，没什么思路。决定去看一下不可做的 $D$。</p>
-<p>$D$ 题题面过于抽象，模拟了一下样例，发现有点像拓扑排序？写了一会，调不出来，直接重构了。</p>
-<p>继续深剖样例（<del>联系生活实际</del>），发现酷似最短路，只需要开两个 dis 数组就可以了。</p>
-<h3 id="11：40-12：00"><a href="#11：40-12：00" class="headerlink" title="11：40~12：00"></a>11：40~12：00</h3><p>没心情写题了，打了个 $B$ 题的暴搜，交卷。</p>
-<h2 id="赛后"><a href="#赛后" class="headerlink" title="赛后"></a>赛后</h2><p>预估：$100+30+100+100&#x3D;330$</p>
-<p>实际：$100+30+42+100&#x3D;272$</p>
-<p>$C$ 不知道哪写挂了，感觉正解和自己思路差不多，有点盲目自信了。</p>
-<p>$B$ 题题解先咕一下。</p>
-
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2025/3/15</div>
+            <a href="/%E6%94%80%E5%B1%B1%E5%B0%8F%E9%98%9F%E4%B8%89%E6%9C%88%E6%9C%88%E8%B5%9B/">
+                <h3>攀山小队三月月赛</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/%E6%A8%A1%E6%8B%9F%E8%B5%9B%E5%8F%8A%E6%B8%B8%E8%AE%B0/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        模拟赛及游记
+                    </a>
+                </span>
+                
+                
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    
-    
     
 </div>
 
@@ -230,12 +218,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-
     
 </body>
 </html>
